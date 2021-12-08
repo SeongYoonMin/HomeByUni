@@ -1,2 +1,9 @@
 # HomeByUni
-개인 홈페이지를 제작해보고자 만든 Repository입니다.
+Skill
+=====
+HTML5/CSS3/JavaScript/JQuery
+
+SNS
+===
+Velog : https://velog.io/@villain_uni
+Email : namo4862@gmail.com
