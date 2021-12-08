@@ -1,7 +1,7 @@
 # HomeByUni
 Skill
 =====
-HTML5/CSS3/JavaScript/JQuery
+>HTML5/CSS3/JavaScript/JQuery
 
 SNS
 ===
