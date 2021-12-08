@@ -1,0 +1,120 @@
+
+* {
+    font-size: 10px;
+    color: rgba(255,255,255,0.9);
+}
+
+.testBox{
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(../img/snowMountain.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    white-space: nowrap;
+}
+
+.topNav{
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    top: 0;
+    z-index: 10;
+}
+
+.topNav .topNav-subNav p{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.mainPageBox{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10rem;
+    height: 100%;
+    text-align: center;
+}
+.mainPageBox h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.secondPageBox{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 4rem;
+    position: relative;
+}
+.secondPageBox h2{
+    font-size: 3rem;
+    color: black;
+}
+.secondPageBox p{
+    color: black;
+}
+
+#secondPageCall{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.thirdPageBox{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 4rem;
+    position: relative;
+}
+.thirdPageBox h2{
+    font-size: 3rem;
+    color: black;
+}
+.thirdPageBox p{
+    color: black;
+}
+
+#thirdPageCall{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.fourthPageBox{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 4rem;
+    position: relative;
+}
+.fourthPageBox h2{
+    font-size: 3rem;
+    color: black;
+}
+.fourthPageBox p{
+    color: black;
+}
+
+#fourthPageCall{
+    position: absolute;
+    top:0;
+    left:0;
+}
