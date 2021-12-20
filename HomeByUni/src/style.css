@@ -5,10 +5,14 @@
 }
 
 .testBox{
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     background-color: black;
     margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow: hidden;
 }
 
 html{
@@ -19,13 +23,12 @@ body{
     background: url(../img/snowMountain.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
-    white-space: nowrap;
 }
 
 .topNav{
     width: 100%;
     height: 4rem;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(2,7,21,0.9);
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -34,11 +37,22 @@ body{
     padding: 0 1rem;
     top: 0;
     z-index: 10;
+    border-bottom: 1px solid #BDBDBD;
 }
 
-.topNav .topNav-subNav p{
+.topNav .mainLogo{
+    font-size: 2rem;
+}
+
+.topNav .topNav-subNav a, .topNav .mainLogo{
     display: inline-block;
-    margin-left: 1rem;
+    margin: 0 2rem;
+}
+
+.topNav .topNav-subNav a:hover, .topNav .mainLogo:hover{
+    transition: all .3s;
+    color: pink;
+    transform: scale(2);
 }
 
 .mainPageBox{
@@ -49,31 +63,87 @@ body{
     text-align: center;
 }
 .mainPageBox h2{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
+}
+.mainPageBox p{
+    margin-top: 2rem;
+    color: #BDBDBD;
 }
 
 .secondPageBox{
+    margin-top: 5.8rem;
     width: 100%;
     height: 100vh;
     background-color: white;
     text-align: center;
     padding-top: 4rem;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(2,7,21,0.9);
 }
 .secondPageBox h2{
     font-size: 3rem;
-    color: black;
+    color: whitesmoke;
+    margin-bottom: 2rem;
 }
-.secondPageBox p{
-    color: black;
+.secondPageBox article p{
+    color: #828282;
+    font-size: 1.6rem;
+}
+.secondPageBox img{
+    display: none;
+    width: 32rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+.secondPageBox .imageBox{
+    overflow: hidden;
+    width: 32rem;
+    height: 18rem;
+    position: relative;
+}
+.secondPageBox article{
+    text-align: left;
 }
 
+img.active{
+    display: block;
+    animation: fadeImg 0.8s;
+}
+
+.imageBox button{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: .3rem;
+    transition: all .3s;
+}
+.imageBox button:hover{
+    color: rgb(255, 193, 181);
+    ;
+}
+.imageBox .back{
+    left: 1rem;
+}
+.imageBox .next{
+    right: 1rem;
+}
 #secondPageCall{
     position: absolute;
     top:0;
     left:0;
 }
+
 
 .thirdPageBox{
     width: 100%;
@@ -82,15 +152,35 @@ body{
     text-align: center;
     padding-top: 4rem;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(2,7,21,0.9);
 }
 .thirdPageBox h2{
     font-size: 3rem;
-    color: black;
+    color: whitesmoke;
+    margin-bottom: 2rem;
 }
-.thirdPageBox p{
-    color: black;
+.thirdPageBox article p{
+    color: #828282;
+    font-size: 1.6rem;
 }
-
+.thirdPageBox img{
+    /* display: none; */
+    width: 32rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+.thirdPageBox .imageBox{
+    overflow: hidden;
+    width: 32rem;
+    height: 18rem;
+    position: relative;
+}
+.thirdPageBox article{
+    text-align: left;
+}
 #thirdPageCall{
     position: absolute;
     top:0;
@@ -104,6 +194,7 @@ body{
     text-align: center;
     padding-top: 4rem;
     position: relative;
+    background-color: rgba(2,7,21,0.9);
 }
 .fourthPageBox h2{
     font-size: 3rem;
@@ -111,6 +202,14 @@ body{
 }
 .fourthPageBox p{
     color: black;
+}
+.fourthPageBox a{
+    display: block;
+    color: black;
+
+}
+.fourthPageBox a:visited{
+    color: pink;
 }
 
 #fourthPageCall{
